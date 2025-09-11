@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: manual/Dockerfile
+    container_name: flight-backend
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/flightdb
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: samuel11
+    depends_on:
+      - db
+
+  db:
+    image: postgres:16
+    container_name: flight-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: samuel11
+      POSTGRES_DB: flightdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
