@@ -1,0 +1,34 @@
+\section{Metodología}
+La metodología implementada para la realización del sistema, se fundamentó con el 
+marco de trabajo Scrum, reconocido por su flexibilidad y capacidad de adaptación [6]. Se 
+organizaron ciclos de trabajo denominados sprints de dos semanas, en los cuales el 
+equipo debía entregar incrementos funcionales del sistema. Se realizaron reuniones de 
+planificación, reuniones diarias (daily scrum) para el seguimiento del progreso, revisiones 
+de sprint y retroalimentación, con el fin de garantizar una mejora continua. Este enfoque 
+se complementa con documentación formal y un modelo de especificación de 
+requerimientos detallado, tal como se establece en el Informe de Requerimientos [10]. 
+
+Desde el punto de vista técnico, la elección de las herramientas y los frameworks se 
+realizó con base en análisis y comparaciones realizadas. Laravel fue adoptado como 
+framework backend debido a su simplicidad, seguridad integrada y ecosistema de 
+herramientas como Eloquent ORM, Blade y migraciones [1]. Aunque Symfony se 
+consideró por su robustez y orientación empresarial [7], se determinó que Laravel 
+respondía mejor a los objetivos del proyecto. En el frontend, React fue implementado por 
+su capacidad de reutilización de componentes, eficiencia y soporte por parte de una 
+amplia comunidad [2]. Estudios comparativos demuestran que React ofrece un balance 
+adecuado entre curva de aprendizaje y flexibilidad, en contraste con Angular, que 
+presenta mayor complejidad [4], [5]. 
+
+La aplicación móvil se diseñó únicamente para el sistema operativo Android, tomando en 
+cuenta la accesibilidad de esta plataforma en el contexto del proyecto. Se contempló la 
+futura incorporación de React Native para extender la compatibilidad hacia iOS y 
+aprovechar las ventajas de compartir código entre plataformas [3]. 
+
+El sistema está constituido por tres módulos fundamentales: la base de datos centralizada, 
+la aplicación móvil y el portal web. El portal web facilita la administración, el registro de 
+tickets y la creación de informes; la aplicación móvil brinda a los técnicos la posibilidad 
+de recibir notificaciones push y guardar evidencias multimedia; y contar con una base de 
+datos centralizada garantiza que la información sea íntegra, se pueda rastrear y esté 
+disponible. La integración de estos módulos se llevó a cabo de acuerdo con el modelo 
+arquitectónico MVC [8], lo cual permitió dividir las responsabilidades y hacer que el 
+sistema pueda escalar a un  futuro. 

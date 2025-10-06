@@ -1,0 +1,32 @@
+\documentclass[man]{apa7}
+
+\input{includes/preamble_common}
+\input{includes/preamble_apa7}
+
+\title{Plantilla multi-formato para investigación aplicada en buenas prácticas de desarrollo de software}
+\shorttitle{Investigación aplicada en IS}
+\authorsnames{Samuel Felipe Paloma Quila}
+\authorsaffiliations{Análisis y Desarrollo de Software, SENA}
+\authornote{ORCID: \href{https://orcid.org/0009-0002-8615-8660}{0009-0002-8615-8660}. Instructor: Jesús Ariel González Bonilla (ORCID: \href{https://orcid.org/0000-0001-6272-8695}{0000-0001-6272-8695}). Correspondencia: samupalo3@gmail.com}
+
+\abstract{\input{sections/00_abstract}}
+
+\keywords{buenas prácticas, ingeniería de software, investigación aplicada, reproducibilidad}
+
+\begin{document}
+\maketitle
+
+\input{sections/01_introduccion}
+\input{sections/02_relacionados}
+\input{sections/03_metodologia}
+\input{sections/04_implementacion}
+\input{sections/05_resultados}
+\input{sections/06_discusion}
+\input{sections/07_conclusiones}
+\input{sections/A1_apendices}
+
+% Incluir todas las referencias aunque no tengan \cite en el texto
+\nocite{*}
+\printbibliography
+
+\end{document}
